@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lab - SVG animation</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="script.js" type="module" defer></script>
+</head>
+<body>
+    <svg id="char" viewBox="-75 -75 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="char_extern" fill="white" transform-origin="50 50" fill-rule="evenodd" clip-rule="evenodd">
+            <animate attributeType="XML" attributeName="d" fill="freeze"/>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="30s" repeatCount="indefinite"/>
+        </path>
+
+        <path class="char_center" transform-origin="50 50" fill="white">
+            <animate attributeType="XML" attributeName="d" fill="freeze"/>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite"/>
+        </path>
+        <g class="char_center_glow-1" filter="url(#filter0)"></g>
+
+        <defs>
+            <filter id="filter0" x="-75" y="-75" width="250" height="250" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <footer>
+        <a class="footer_link" href="https://vincentlandrieux.github.io/" style="--img-url: url(./images/logo.png)"></a>
+        <a class="footer_link" href="https://github.com/VincentLandrieux/lab" style="--img-url: url(./images/logo_github.png)"></a>
+    </footer>
+</body>
+</html>

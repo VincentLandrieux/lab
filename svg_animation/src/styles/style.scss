@@ -1,0 +1,19 @@
+@use "generals/fonts" as *;
+@use "generals/variables" as *;
+@use "generals/general" as *;
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*---Main---*/
+#char{
+    width: 60vmin;
+    height: 60vmin;
+}

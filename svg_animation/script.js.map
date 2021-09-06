@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/scripts/script.js"],
+  "sourcesContent": ["\r\nconsole.log(\"Lab Project\");"],
+  "mappings": "MACA,QAAQ,IAAI",
+  "names": []
+}
