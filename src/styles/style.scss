@@ -1,0 +1,82 @@
+@use "generals/fonts" as *;
+@use "generals/variables" as *;
+@use "generals/general" as *;
+
+
+body{
+    min-height: 100vh;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/*---Main---*/
+main{
+    background-color: $color-light;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    &_row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_card{
+        position: relative;
+        width: 100%;
+        margin: 10px;
+        padding-top: 62%;
+        background-color: $color-black;
+
+        &.demi{
+            padding-top: 31%;
+        }
+
+        &_content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: var(--img-url);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+@media (max-width: 720px){
+    header{
+        padding: 20px;
+    }
+
+    .projects{
+        padding: 30px 20px;
+    
+        &_row{
+            flex-direction: column;
+        }
+    
+        &_card{
+    
+            &.demi{
+                padding-top: 62%;
+            }
+        }
+    }
+}

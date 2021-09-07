@@ -1,0 +1,20 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/styles:./",
+    "esbuild": "esbuild ./src/scripts/script.js --outdir=./ --watch",
+    "build": "esbuild ./src/scripts/script.js --outdir=./ --bundle --minify --sourcemap & sass ./src/styles:./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.12.25",
+    "sass": "^1.38.2"
+  }
+}

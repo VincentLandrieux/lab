@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Black.ttf);
+  font-weight: 900;
+}
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2rem;
+  color: #FFF;
+  background-color: #222;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+}
+
+/*---Footer---*/
+footer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_link {
+  width: 42px;
+  height: 42px;
+  margin: 0 20px;
+  background-image: var(--img-url);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/*---Main---*/
+main {
+  background-color: #F2F2F2;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.projects_row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.projects_card {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  padding-top: 62%;
+  background-color: #222;
+}
+.projects_card.demi {
+  padding-top: 31%;
+}
+.projects_card_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--img-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 20px;
+  }
+
+  .projects {
+    padding: 30px 20px;
+  }
+  .projects_row {
+    flex-direction: column;
+  }
+  .projects_card.demi {
+    padding-top: 62%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
