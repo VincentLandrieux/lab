@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Black.ttf);
+  font-weight: 900;
+}
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2rem;
+  color: #FFFFFF;
+  background-color: #222;
+  scroll-behavior: smooth;
+}
+
+/*---Footer---*/
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_link {
+  width: 42px;
+  height: 42px;
+  margin: 0 20px;
+  background-image: var(--img-url);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  font-size: 4vmin;
+}
+
+/*---Main---*/
+main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+.circle.blue {
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(50vw - 59.6vmin);
+  top: calc(50vh - 40vmin);
+  background-image: linear-gradient(to right top, #6ee7b7, #3b82f6, #9333ea);
+}
+.circle.red {
+  width: 80vmin;
+  height: 80vmin;
+  left: auto;
+  right: calc(50vw - 92.8vmin);
+  bottom: calc(50vh - 66.4vmin);
+  background-image: linear-gradient(to bottom left, #ec4899, #ef4444, #f59e0b);
+}
+
+.card {
+  position: relative;
+  width: 80vmin;
+  height: 52vmin;
+  padding: 6vmin;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4vmin;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.card h1 {
+  position: absolute;
+  bottom: 6vmin;
+  left: 6vmin;
+}
+.card_reflect {
+  position: absolute;
+  width: 58vmin;
+  height: 58vmin;
+  top: 0%;
+  left: 20%;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  opacity: 0.06;
+  filter: blur(50px);
+  transition: top 0.2s, left 0.2s;
+}
+
+/*# sourceMappingURL=style.css.map */

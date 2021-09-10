@@ -1,0 +1,43 @@
+@use "fonts" as *;
+@use "variables" as *;
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2rem;
+    color: $color-white;
+    background-color: $color-black;
+    scroll-behavior: smooth;
+}
+
+/*---Footer---*/
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .footer{
+        &_link{
+            width: 42px;
+            height: 42px;
+            margin: 0 20px;
+            
+            background-image: var(--img-url);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
